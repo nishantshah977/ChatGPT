@@ -45,7 +45,7 @@ openai.api_key = 'anything'
 openai.base_url = "http://localhost:3040/v1/"
 
 completion = openai.chat.completions.create(
-    model="gpt-3.5-turbo",
+    model="meta-llama-3-8b-instruct",
     messages=[
         {"role": "user", "content": "How do I list all files in a directory using Python?"},
     ],
@@ -66,7 +66,7 @@ const openai = new OpenAI({
 
 const chatCompletion = await openai.chat.completions.create({
   messages: [{ role: "user", content: "Say this is a test" }],
-  model: "gpt-3.5-turbo",
+  model: "meta-llama-3-8b-instruct",
 });
 
 console.log(chatCompletion.choices[0].message.content);
@@ -78,7 +78,7 @@ console.log(chatCompletion.choices[0].message.content);
 curl http://localhost:port/v1/chat/completions \
   -H "Content-Type: application/json" \
   -d '{
-    "model": "gpt-3.5-turbo",
+    "model": "meta-llama-3-8b-instruct",
     "messages": [
       {
         "role": "system",
