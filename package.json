@@ -5,7 +5,7 @@
     "dotenv": "^16.4.5",
     "express": "^4.21.0",
     "nstbrowser-sdk-node": "^0.0.6",
-    "puppeteer-core": "^22.10.0",
+    "puppeteer-core": "^22.15.0",
     "tiktoken-node": "^0.0.7"
   },
   "type": "module",
